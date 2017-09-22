@@ -1,0 +1,1 @@
+curl -k https://10.141.65.253:38446/services/collector -H 'Authorization: Splunk 6D6D2EF5-FDA7-4B30-B891-482D50F9885A' -d '{"sourcetype": "mysourcetype", "event":"Hello, Docker!"}'
