@@ -1,0 +1,890 @@
+[2017-09-14 16:23:45,404] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2017-09-14 16:23:45,406] ERROR Invalid config, exiting abnormally (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing config/zookeeper.properties
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:154)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:101)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+Caused by: java.lang.IllegalArgumentException: config/zookeeper.properties file is missing
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:138)
+	... 2 more
+[2017-09-14 16:24:24,272] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2017-09-14 16:24:24,275] INFO autopurge.snapRetainCount set to 3 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2017-09-14 16:24:24,275] INFO autopurge.purgeInterval set to 0 (org.apache.zookeeper.server.DatadirCleanupManager)
+[2017-09-14 16:24:24,275] INFO Purge task is not scheduled. (org.apache.zookeeper.server.DatadirCleanupManager)
+[2017-09-14 16:24:24,275] WARN Either no config or no quorum defined in config, running  in standalone mode (org.apache.zookeeper.server.quorum.QuorumPeerMain)
+[2017-09-14 16:24:24,293] INFO Reading configuration from: config/zookeeper.properties (org.apache.zookeeper.server.quorum.QuorumPeerConfig)
+[2017-09-14 16:24:24,293] INFO Starting server (org.apache.zookeeper.server.ZooKeeperServerMain)
+[2017-09-14 16:24:24,309] INFO Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,309] INFO Server environment:host.name=gpatzlaff-mbp15-02.sv.splunk.com (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,309] INFO Server environment:java.version=1.8.0_111 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,309] INFO Server environment:java.vendor=Oracle Corporation (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,309] INFO Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,309] INFO Server environment:java.class.path=:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/aopalliance-repackaged-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/argparse4j-0.7.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/commons-lang3-3.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-api-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-file-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-json-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-runtime-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-transforms-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/guava-20.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-api-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-locator-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-utils-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-annotations-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-core-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-databind-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-jaxrs-base-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-jaxrs-json-provider-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-module-jaxb-annotations-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javassist-3.21.0-GA.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.annotation-api-1.2.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.inject-1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.inject-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.ws.rs-api-2.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-client-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-common-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-container-servlet-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-container-servlet-core-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-guava-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-media-jaxb-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-server-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-continuation-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-http-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-io-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-security-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-server-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-servlet-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-servlets-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-util-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jopt-simple-5.0.3.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-clients-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-log4j-appender-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-streams-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-streams-examples-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-tools-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0-sources.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0-test-sources.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/log4j-1.2.17.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/lz4-1.3.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/maven-artifact-3.5.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/metrics-core-2.2.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/plexus-utils-3.0.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/reflections-0.9.11.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/rocksdbjni-5.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/scala-library-2.11.11.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/scala-parser-combinators_2.11-1.0.4.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/slf4j-api-1.7.25.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/slf4j-log4j12-1.7.25.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/snappy-java-1.1.2.6.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/validation-api-1.1.0.Final.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/zkclient-0.10.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/zookeeper-3.4.10.jar (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:java.library.path=/Users/gpatzlaff/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:java.io.tmpdir=/var/folders/gz/9ky3yzkd18qbh45mc8_k7hdw0000gp/T/ (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:java.compiler=<NA> (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:os.name=Mac OS X (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:os.arch=x86_64 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:os.version=10.12.6 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:user.name=gpatzlaff (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:user.home=/Users/gpatzlaff (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,310] INFO Server environment:user.dir=/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,317] INFO tickTime set to 3000 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,317] INFO minSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,317] INFO maxSessionTimeout set to -1 (org.apache.zookeeper.server.ZooKeeperServer)
+[2017-09-14 16:24:24,338] INFO binding to port 0.0.0.0/0.0.0.0:2181 (org.apache.zookeeper.server.NIOServerCnxnFactory)
+[2017-09-14 16:24:56,185] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.11.0-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.11.0-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2017-09-14 16:24:56,244] INFO starting (kafka.server.KafkaServer)
+[2017-09-14 16:24:56,248] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2017-09-14 16:24:56,259] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2017-09-14 16:24:56,272] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,272] INFO Client environment:host.name=gpatzlaff-mbp15-02.sv.splunk.com (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,273] INFO Client environment:java.version=1.8.0_111 (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,273] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,273] INFO Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,273] INFO Client environment:java.class.path=:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/aopalliance-repackaged-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/argparse4j-0.7.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/commons-lang3-3.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-api-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-file-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-json-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-runtime-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-transforms-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/guava-20.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-api-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-locator-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-utils-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-annotations-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-core-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-databind-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-jaxrs-base-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-jaxrs-json-provider-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-module-jaxb-annotations-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javassist-3.21.0-GA.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.annotation-api-1.2.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.inject-1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.inject-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.ws.rs-api-2.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-client-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-common-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-container-servlet-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-container-servlet-core-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-guava-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-media-jaxb-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-server-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-continuation-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-http-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-io-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-security-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-server-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-servlet-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-servlets-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-util-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jopt-simple-5.0.3.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-clients-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-log4j-appender-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-streams-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-streams-examples-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-tools-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0-sources.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0-test-sources.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/log4j-1.2.17.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/lz4-1.3.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/maven-artifact-3.5.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/metrics-core-2.2.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/plexus-utils-3.0.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/reflections-0.9.11.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/rocksdbjni-5.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/scala-library-2.11.11.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/scala-parser-combinators_2.11-1.0.4.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/slf4j-api-1.7.25.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/slf4j-log4j12-1.7.25.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/snappy-java-1.1.2.6.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/validation-api-1.1.0.Final.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/zkclient-0.10.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/zookeeper-3.4.10.jar (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:java.library.path=/Users/gpatzlaff/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:java.io.tmpdir=/var/folders/gz/9ky3yzkd18qbh45mc8_k7hdw0000gp/T/ (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:os.name=Mac OS X (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:os.arch=x86_64 (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:os.version=10.12.6 (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:user.name=gpatzlaff (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:user.home=/Users/gpatzlaff (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,274] INFO Client environment:user.dir=/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0 (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,275] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@636be97c (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:24:56,288] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2017-09-14 16:24:56,290] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2017-09-14 16:24:56,342] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2017-09-14 16:24:56,370] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x15e828aac6a0002, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2017-09-14 16:24:56,372] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2017-09-14 16:24:56,509] INFO Cluster ID = 8VFJ9cCTT0ChKCO3MV3t4g (kafka.server.KafkaServer)
+[2017-09-14 16:24:56,512] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2017-09-14 16:24:56,538] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:24:56,539] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:24:56,540] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:24:56,578] INFO Loading logs. (kafka.log.LogManager)
+[2017-09-14 16:24:56,610] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-0/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,610] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-0/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,637] INFO Loading producer state from offset 0 for partition __consumer_offsets-0 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:56,645] INFO Completed load of log __consumer_offsets-0 with 1 log segments, log start offset 0 and log end offset 0 in 39 ms (kafka.log.Log)
+[2017-09-14 16:24:56,651] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-1/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,651] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-1/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,653] INFO Loading producer state from offset 0 for partition __consumer_offsets-1 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:56,654] INFO Completed load of log __consumer_offsets-1 with 1 log segments, log start offset 0 and log end offset 0 in 3 ms (kafka.log.Log)
+[2017-09-14 16:24:56,658] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-10/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,658] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-10/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,851] INFO Loading producer state from offset 0 for partition __consumer_offsets-10 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:56,851] INFO Completed load of log __consumer_offsets-10 with 1 log segments, log start offset 0 and log end offset 0 in 194 ms (kafka.log.Log)
+[2017-09-14 16:24:56,855] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-11/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,856] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-11/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,942] INFO Loading producer state from offset 0 for partition __consumer_offsets-11 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:56,943] INFO Completed load of log __consumer_offsets-11 with 1 log segments, log start offset 0 and log end offset 0 in 88 ms (kafka.log.Log)
+[2017-09-14 16:24:56,946] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-12/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:56,946] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-12/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,039] INFO Loading producer state from offset 0 for partition __consumer_offsets-12 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,039] INFO Completed load of log __consumer_offsets-12 with 1 log segments, log start offset 0 and log end offset 0 in 94 ms (kafka.log.Log)
+[2017-09-14 16:24:57,043] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-13/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,043] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-13/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,122] INFO Loading producer state from offset 0 for partition __consumer_offsets-13 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,122] INFO Completed load of log __consumer_offsets-13 with 1 log segments, log start offset 0 and log end offset 0 in 80 ms (kafka.log.Log)
+[2017-09-14 16:24:57,126] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-14/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,126] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-14/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,211] INFO Loading producer state from offset 0 for partition __consumer_offsets-14 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,212] INFO Completed load of log __consumer_offsets-14 with 1 log segments, log start offset 0 and log end offset 0 in 87 ms (kafka.log.Log)
+[2017-09-14 16:24:57,215] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-15/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,215] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-15/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,305] INFO Loading producer state from offset 0 for partition __consumer_offsets-15 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,305] INFO Completed load of log __consumer_offsets-15 with 1 log segments, log start offset 0 and log end offset 0 in 91 ms (kafka.log.Log)
+[2017-09-14 16:24:57,309] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-16/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,309] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-16/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,397] INFO Loading producer state from offset 0 for partition __consumer_offsets-16 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,397] INFO Completed load of log __consumer_offsets-16 with 1 log segments, log start offset 0 and log end offset 0 in 89 ms (kafka.log.Log)
+[2017-09-14 16:24:57,400] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-17/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,401] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-17/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,482] INFO Loading producer state from offset 0 for partition __consumer_offsets-17 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,483] INFO Completed load of log __consumer_offsets-17 with 1 log segments, log start offset 0 and log end offset 0 in 84 ms (kafka.log.Log)
+[2017-09-14 16:24:57,486] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-18/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,487] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-18/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,585] INFO Loading producer state from offset 0 for partition __consumer_offsets-18 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,585] INFO Completed load of log __consumer_offsets-18 with 1 log segments, log start offset 0 and log end offset 0 in 100 ms (kafka.log.Log)
+[2017-09-14 16:24:57,588] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-19/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,589] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-19/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,683] INFO Loading producer state from offset 0 for partition __consumer_offsets-19 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,684] INFO Completed load of log __consumer_offsets-19 with 1 log segments, log start offset 0 and log end offset 0 in 96 ms (kafka.log.Log)
+[2017-09-14 16:24:57,687] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-2/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,687] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-2/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,770] INFO Loading producer state from offset 0 for partition __consumer_offsets-2 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,770] INFO Completed load of log __consumer_offsets-2 with 1 log segments, log start offset 0 and log end offset 0 in 84 ms (kafka.log.Log)
+[2017-09-14 16:24:57,772] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-20/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,773] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-20/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,859] INFO Loading producer state from offset 0 for partition __consumer_offsets-20 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,860] INFO Completed load of log __consumer_offsets-20 with 1 log segments, log start offset 0 and log end offset 0 in 87 ms (kafka.log.Log)
+[2017-09-14 16:24:57,862] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-21/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,863] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-21/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,945] INFO Loading producer state from offset 0 for partition __consumer_offsets-21 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:57,945] INFO Completed load of log __consumer_offsets-21 with 1 log segments, log start offset 0 and log end offset 0 in 83 ms (kafka.log.Log)
+[2017-09-14 16:24:57,947] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-22/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:57,947] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-22/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,040] INFO Loading producer state from offset 0 for partition __consumer_offsets-22 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,041] INFO Completed load of log __consumer_offsets-22 with 1 log segments, log start offset 0 and log end offset 0 in 93 ms (kafka.log.Log)
+[2017-09-14 16:24:58,044] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-23/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,044] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-23/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,134] INFO Loading producer state from offset 0 for partition __consumer_offsets-23 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,134] INFO Completed load of log __consumer_offsets-23 with 1 log segments, log start offset 0 and log end offset 0 in 91 ms (kafka.log.Log)
+[2017-09-14 16:24:58,137] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-24/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,137] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-24/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,231] INFO Loading producer state from offset 0 for partition __consumer_offsets-24 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,232] INFO Completed load of log __consumer_offsets-24 with 1 log segments, log start offset 0 and log end offset 0 in 96 ms (kafka.log.Log)
+[2017-09-14 16:24:58,234] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-25/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,235] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-25/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,331] INFO Loading producer state from offset 0 for partition __consumer_offsets-25 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,332] INFO Completed load of log __consumer_offsets-25 with 1 log segments, log start offset 0 and log end offset 0 in 98 ms (kafka.log.Log)
+[2017-09-14 16:24:58,334] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-26/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,335] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-26/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,421] INFO Loading producer state from offset 0 for partition __consumer_offsets-26 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,422] INFO Completed load of log __consumer_offsets-26 with 1 log segments, log start offset 0 and log end offset 0 in 89 ms (kafka.log.Log)
+[2017-09-14 16:24:58,425] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-27/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,425] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-27/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,513] INFO Loading producer state from offset 0 for partition __consumer_offsets-27 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,514] INFO Completed load of log __consumer_offsets-27 with 1 log segments, log start offset 0 and log end offset 0 in 89 ms (kafka.log.Log)
+[2017-09-14 16:24:58,517] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-28/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,517] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-28/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,606] INFO Loading producer state from offset 0 for partition __consumer_offsets-28 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,607] INFO Completed load of log __consumer_offsets-28 with 1 log segments, log start offset 0 and log end offset 0 in 91 ms (kafka.log.Log)
+[2017-09-14 16:24:58,609] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-29/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,610] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-29/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,703] INFO Loading producer state from offset 0 for partition __consumer_offsets-29 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,703] INFO Completed load of log __consumer_offsets-29 with 1 log segments, log start offset 0 and log end offset 0 in 94 ms (kafka.log.Log)
+[2017-09-14 16:24:58,706] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-3/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,706] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-3/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,796] INFO Loading producer state from offset 0 for partition __consumer_offsets-3 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,797] INFO Completed load of log __consumer_offsets-3 with 1 log segments, log start offset 0 and log end offset 0 in 92 ms (kafka.log.Log)
+[2017-09-14 16:24:58,799] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-30/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,799] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-30/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,890] INFO Loading producer state from offset 0 for partition __consumer_offsets-30 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,890] INFO Completed load of log __consumer_offsets-30 with 1 log segments, log start offset 0 and log end offset 0 in 92 ms (kafka.log.Log)
+[2017-09-14 16:24:58,892] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-31/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,893] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-31/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,990] INFO Loading producer state from offset 0 for partition __consumer_offsets-31 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:58,990] INFO Completed load of log __consumer_offsets-31 with 1 log segments, log start offset 0 and log end offset 0 in 98 ms (kafka.log.Log)
+[2017-09-14 16:24:58,993] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-32/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:58,993] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-32/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,093] INFO Loading producer state from offset 0 for partition __consumer_offsets-32 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,094] INFO Completed load of log __consumer_offsets-32 with 1 log segments, log start offset 0 and log end offset 0 in 101 ms (kafka.log.Log)
+[2017-09-14 16:24:59,096] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-33/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,096] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-33/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,196] INFO Loading producer state from offset 0 for partition __consumer_offsets-33 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,197] INFO Completed load of log __consumer_offsets-33 with 1 log segments, log start offset 0 and log end offset 0 in 102 ms (kafka.log.Log)
+[2017-09-14 16:24:59,199] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-34/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,200] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-34/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,278] INFO Loading producer state from offset 0 for partition __consumer_offsets-34 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,279] INFO Completed load of log __consumer_offsets-34 with 1 log segments, log start offset 0 and log end offset 0 in 80 ms (kafka.log.Log)
+[2017-09-14 16:24:59,284] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-35/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,284] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-35/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,371] INFO Loading producer state from offset 0 for partition __consumer_offsets-35 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,371] INFO Completed load of log __consumer_offsets-35 with 1 log segments, log start offset 0 and log end offset 0 in 89 ms (kafka.log.Log)
+[2017-09-14 16:24:59,374] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-36/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,374] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-36/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,455] INFO Loading producer state from offset 0 for partition __consumer_offsets-36 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,456] INFO Completed load of log __consumer_offsets-36 with 1 log segments, log start offset 0 and log end offset 0 in 83 ms (kafka.log.Log)
+[2017-09-14 16:24:59,458] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-37/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,458] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-37/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,538] INFO Loading producer state from offset 0 for partition __consumer_offsets-37 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,538] INFO Completed load of log __consumer_offsets-37 with 1 log segments, log start offset 0 and log end offset 0 in 81 ms (kafka.log.Log)
+[2017-09-14 16:24:59,540] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-38/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,540] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-38/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,627] INFO Loading producer state from offset 0 for partition __consumer_offsets-38 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,628] INFO Completed load of log __consumer_offsets-38 with 1 log segments, log start offset 0 and log end offset 0 in 87 ms (kafka.log.Log)
+[2017-09-14 16:24:59,630] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-39/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,630] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-39/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,707] INFO Loading producer state from offset 0 for partition __consumer_offsets-39 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,708] INFO Completed load of log __consumer_offsets-39 with 1 log segments, log start offset 0 and log end offset 0 in 79 ms (kafka.log.Log)
+[2017-09-14 16:24:59,710] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-4/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,710] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-4/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,796] INFO Loading producer state from offset 0 for partition __consumer_offsets-4 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,796] INFO Completed load of log __consumer_offsets-4 with 1 log segments, log start offset 0 and log end offset 0 in 87 ms (kafka.log.Log)
+[2017-09-14 16:24:59,893] INFO Loading producer state from offset 3520 for partition __consumer_offsets-40 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,896] INFO Loading producer state from snapshot file 00000000000000003520.snapshot for partition __consumer_offsets-40 (kafka.log.ProducerStateManager)
+[2017-09-14 16:24:59,906] INFO Completed load of log __consumer_offsets-40 with 1 log segments, log start offset 0 and log end offset 3520 in 107 ms (kafka.log.Log)
+[2017-09-14 16:24:59,908] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-41/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,909] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-41/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:24:59,997] INFO Loading producer state from offset 0 for partition __consumer_offsets-41 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:24:59,998] INFO Completed load of log __consumer_offsets-41 with 1 log segments, log start offset 0 and log end offset 0 in 90 ms (kafka.log.Log)
+[2017-09-14 16:25:00,000] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-42/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,001] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-42/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,092] INFO Loading producer state from offset 0 for partition __consumer_offsets-42 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,092] INFO Completed load of log __consumer_offsets-42 with 1 log segments, log start offset 0 and log end offset 0 in 92 ms (kafka.log.Log)
+[2017-09-14 16:25:00,094] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-43/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,094] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-43/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,178] INFO Loading producer state from offset 0 for partition __consumer_offsets-43 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,178] INFO Completed load of log __consumer_offsets-43 with 1 log segments, log start offset 0 and log end offset 0 in 85 ms (kafka.log.Log)
+[2017-09-14 16:25:00,180] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-44/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,181] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-44/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,278] INFO Loading producer state from offset 0 for partition __consumer_offsets-44 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,278] INFO Completed load of log __consumer_offsets-44 with 1 log segments, log start offset 0 and log end offset 0 in 98 ms (kafka.log.Log)
+[2017-09-14 16:25:00,280] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-45/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,281] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-45/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,357] INFO Loading producer state from offset 0 for partition __consumer_offsets-45 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,358] INFO Completed load of log __consumer_offsets-45 with 1 log segments, log start offset 0 and log end offset 0 in 77 ms (kafka.log.Log)
+[2017-09-14 16:25:00,360] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-46/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,360] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-46/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,438] INFO Loading producer state from offset 0 for partition __consumer_offsets-46 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,439] INFO Completed load of log __consumer_offsets-46 with 1 log segments, log start offset 0 and log end offset 0 in 80 ms (kafka.log.Log)
+[2017-09-14 16:25:00,441] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-47/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,441] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-47/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,536] INFO Loading producer state from offset 0 for partition __consumer_offsets-47 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,536] INFO Completed load of log __consumer_offsets-47 with 1 log segments, log start offset 0 and log end offset 0 in 96 ms (kafka.log.Log)
+[2017-09-14 16:25:00,538] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-48/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,538] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-48/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,629] INFO Loading producer state from offset 0 for partition __consumer_offsets-48 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,630] INFO Completed load of log __consumer_offsets-48 with 1 log segments, log start offset 0 and log end offset 0 in 93 ms (kafka.log.Log)
+[2017-09-14 16:25:00,631] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-49/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,632] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-49/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,713] INFO Loading producer state from offset 0 for partition __consumer_offsets-49 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,714] INFO Completed load of log __consumer_offsets-49 with 1 log segments, log start offset 0 and log end offset 0 in 83 ms (kafka.log.Log)
+[2017-09-14 16:25:00,716] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-5/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,716] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-5/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,796] INFO Loading producer state from offset 0 for partition __consumer_offsets-5 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,796] INFO Completed load of log __consumer_offsets-5 with 1 log segments, log start offset 0 and log end offset 0 in 81 ms (kafka.log.Log)
+[2017-09-14 16:25:00,798] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-6/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,799] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-6/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,877] INFO Loading producer state from offset 0 for partition __consumer_offsets-6 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,877] INFO Completed load of log __consumer_offsets-6 with 1 log segments, log start offset 0 and log end offset 0 in 79 ms (kafka.log.Log)
+[2017-09-14 16:25:00,880] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-7/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,880] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-7/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,961] INFO Cleared latest Set(EpochEntry(70,0)) entries from epoch cache based on passed offset 0 leaving 0 in EpochFile for partition __consumer_offsets-7 (kafka.server.epoch.LeaderEpochFileCache)
+[2017-09-14 16:25:00,961] INFO Loading producer state from offset 0 for partition __consumer_offsets-7 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:00,964] INFO Completed load of log __consumer_offsets-7 with 1 log segments, log start offset 0 and log end offset 0 in 85 ms (kafka.log.Log)
+[2017-09-14 16:25:00,966] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-8/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:00,966] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-8/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:01,046] INFO Loading producer state from offset 0 for partition __consumer_offsets-8 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:01,046] INFO Completed load of log __consumer_offsets-8 with 1 log segments, log start offset 0 and log end offset 0 in 81 ms (kafka.log.Log)
+[2017-09-14 16:25:01,049] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-9/00000000000000000000.index, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:01,049] WARN Found an orphaned index file, /tmp/kafka-logs/__consumer_offsets-9/00000000000000000000.timeindex, with no corresponding log file. (kafka.log.Log)
+[2017-09-14 16:25:01,143] INFO Loading producer state from offset 0 for partition __consumer_offsets-9 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:01,143] INFO Completed load of log __consumer_offsets-9 with 1 log segments, log start offset 0 and log end offset 0 in 95 ms (kafka.log.Log)
+[2017-09-14 16:25:01,248] INFO Loading producer state from offset 2 for partition connect-test-0 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:01,248] INFO Loading producer state from snapshot file 00000000000000000002.snapshot for partition connect-test-0 (kafka.log.ProducerStateManager)
+[2017-09-14 16:25:01,249] INFO Completed load of log connect-test-0 with 1 log segments, log start offset 0 and log end offset 2 in 104 ms (kafka.log.Log)
+[2017-09-14 16:25:01,342] INFO Loading producer state from offset 3 for partition test-0 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:25:01,342] INFO Loading producer state from snapshot file 00000000000000000003.snapshot for partition test-0 (kafka.log.ProducerStateManager)
+[2017-09-14 16:25:01,343] INFO Completed load of log test-0 with 1 log segments, log start offset 0 and log end offset 3 in 91 ms (kafka.log.Log)
+[2017-09-14 16:25:01,344] INFO Logs loading complete in 4766 ms. (kafka.log.LogManager)
+[2017-09-14 16:25:01,418] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2017-09-14 16:25:01,419] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2017-09-14 16:25:01,456] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2017-09-14 16:25:01,459] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2017-09-14 16:25:01,471] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:01,472] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:01,472] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:01,511] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:01,514] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:01,514] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:01,527] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2017-09-14 16:25:01,528] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2017-09-14 16:25:01,529] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 1 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2017-09-14 16:25:01,552] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:0,blockEndProducerId:999) by writing to Zk with path version 1 (kafka.coordinator.transaction.ProducerIdManager)
+[2017-09-14 16:25:01,569] INFO [Transaction Coordinator 0]: Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2017-09-14 16:25:01,570] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2017-09-14 16:25:01,570] INFO [Transaction Coordinator 0]: Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2017-09-14 16:25:01,596] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2017-09-14 16:25:01,634] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-09-14 16:25:01,665] INFO Result of znode creation is: NODEEXISTS (kafka.utils.ZKCheckedEphemeral)
+[2017-09-14 16:25:01,666] FATAL [Kafka Server 0], Fatal error during KafkaServer startup. Prepare to shutdown (kafka.server.KafkaServer)
+java.lang.RuntimeException: A broker is already registered on the path /brokers/ids/0. This probably indicates that you either have configured a brokerid that is already in use, or else you have shutdown this broker and restarted it faster than the zookeeper timeout so it appears to be re-registering.
+	at kafka.utils.ZkUtils.registerBrokerInZk(ZkUtils.scala:417)
+	at kafka.utils.ZkUtils.registerBrokerInZk(ZkUtils.scala:403)
+	at kafka.server.KafkaHealthcheck.register(KafkaHealthcheck.scala:70)
+	at kafka.server.KafkaHealthcheck.startup(KafkaHealthcheck.scala:50)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:280)
+	at kafka.server.KafkaServerStartable.startup(KafkaServerStartable.scala:38)
+	at kafka.Kafka$.main(Kafka.scala:65)
+	at kafka.Kafka.main(Kafka.scala)
+[2017-09-14 16:25:01,668] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2017-09-14 16:25:01,669] INFO [Socket Server on Broker 0], Shutting down (kafka.network.SocketServer)
+[2017-09-14 16:25:01,678] INFO [Socket Server on Broker 0], Shutdown completed (kafka.network.SocketServer)
+[2017-09-14 16:25:01,679] INFO [Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2017-09-14 16:25:01,713] INFO [Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2017-09-14 16:25:01,715] INFO [ThrottledRequestReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:02,552] INFO [ThrottledRequestReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:02,552] INFO [ThrottledRequestReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:02,552] INFO [ThrottledRequestReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:03,554] INFO [ThrottledRequestReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:03,554] INFO [ThrottledRequestReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:03,554] INFO [ThrottledRequestReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:04,558] INFO [ThrottledRequestReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:04,558] INFO [ThrottledRequestReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:25:04,559] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2017-09-14 16:25:04,560] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:04,762] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:04,762] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:04,764] INFO [Transaction Coordinator 0]: Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2017-09-14 16:25:04,764] INFO [ProducerId Manager 0]: Shutdown complete: last producerId assigned 0 (kafka.coordinator.transaction.ProducerIdManager)
+[2017-09-14 16:25:04,765] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2017-09-14 16:25:04,765] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2017-09-14 16:25:04,765] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2017-09-14 16:25:04,765] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2017-09-14 16:25:04,766] INFO [Transaction Coordinator 0]: Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2017-09-14 16:25:04,766] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2017-09-14 16:25:04,766] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:04,965] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:04,965] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:04,965] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,168] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,168] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,169] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2017-09-14 16:25:05,169] INFO [Replica Manager on Broker 0]: Shutting down (kafka.server.ReplicaManager)
+[2017-09-14 16:25:05,170] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2017-09-14 16:25:05,171] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2017-09-14 16:25:05,171] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,332] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,332] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,332] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,536] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,536] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,536] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,738] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,738] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:25:05,745] INFO [Replica Manager on Broker 0]: Shut down completely (kafka.server.ReplicaManager)
+[2017-09-14 16:25:05,746] INFO Shutting down. (kafka.log.LogManager)
+[2017-09-14 16:25:05,803] INFO Shutdown complete. (kafka.log.LogManager)
+[2017-09-14 16:25:05,809] INFO Terminate ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2017-09-14 16:25:05,859] INFO Session: 0x15e828aac6a0002 closed (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:25:05,860] INFO EventThread shut down for session: 0x15e828aac6a0002 (org.apache.zookeeper.ClientCnxn)
+[2017-09-14 16:25:05,863] INFO [Kafka Server 0], shut down completed (kafka.server.KafkaServer)
+[2017-09-14 16:25:05,863] FATAL Exiting Kafka. (kafka.server.KafkaServerStartable)
+[2017-09-14 16:25:05,865] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2017-09-14 16:26:03,495] INFO KafkaConfig values: 
+	advertised.host.name = null
+	advertised.listeners = null
+	advertised.port = null
+	alter.config.policy.class.name = null
+	authorizer.class.name = 
+	auto.create.topics.enable = true
+	auto.leader.rebalance.enable = true
+	background.threads = 10
+	broker.id = 0
+	broker.id.generation.enable = true
+	broker.rack = null
+	compression.type = producer
+	connections.max.idle.ms = 600000
+	controlled.shutdown.enable = true
+	controlled.shutdown.max.retries = 3
+	controlled.shutdown.retry.backoff.ms = 5000
+	controller.socket.timeout.ms = 30000
+	create.topic.policy.class.name = null
+	default.replication.factor = 1
+	delete.records.purgatory.purge.interval.requests = 1
+	delete.topic.enable = false
+	fetch.purgatory.purge.interval.requests = 1000
+	group.initial.rebalance.delay.ms = 0
+	group.max.session.timeout.ms = 300000
+	group.min.session.timeout.ms = 6000
+	host.name = 
+	inter.broker.listener.name = null
+	inter.broker.protocol.version = 0.11.0-IV2
+	leader.imbalance.check.interval.seconds = 300
+	leader.imbalance.per.broker.percentage = 10
+	listener.security.protocol.map = SSL:SSL,SASL_PLAINTEXT:SASL_PLAINTEXT,TRACE:TRACE,SASL_SSL:SASL_SSL,PLAINTEXT:PLAINTEXT
+	listeners = null
+	log.cleaner.backoff.ms = 15000
+	log.cleaner.dedupe.buffer.size = 134217728
+	log.cleaner.delete.retention.ms = 86400000
+	log.cleaner.enable = true
+	log.cleaner.io.buffer.load.factor = 0.9
+	log.cleaner.io.buffer.size = 524288
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	log.cleaner.min.cleanable.ratio = 0.5
+	log.cleaner.min.compaction.lag.ms = 0
+	log.cleaner.threads = 1
+	log.cleanup.policy = [delete]
+	log.dir = /tmp/kafka-logs
+	log.dirs = /tmp/kafka-logs
+	log.flush.interval.messages = 9223372036854775807
+	log.flush.interval.ms = null
+	log.flush.offset.checkpoint.interval.ms = 60000
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	log.flush.start.offset.checkpoint.interval.ms = 60000
+	log.index.interval.bytes = 4096
+	log.index.size.max.bytes = 10485760
+	log.message.format.version = 0.11.0-IV2
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	log.message.timestamp.type = CreateTime
+	log.preallocate = false
+	log.retention.bytes = -1
+	log.retention.check.interval.ms = 300000
+	log.retention.hours = 168
+	log.retention.minutes = null
+	log.retention.ms = null
+	log.roll.hours = 168
+	log.roll.jitter.hours = 0
+	log.roll.jitter.ms = null
+	log.roll.ms = null
+	log.segment.bytes = 1073741824
+	log.segment.delete.delay.ms = 60000
+	max.connections.per.ip = 2147483647
+	max.connections.per.ip.overrides = 
+	message.max.bytes = 1000012
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	min.insync.replicas = 1
+	num.io.threads = 8
+	num.network.threads = 3
+	num.partitions = 1
+	num.recovery.threads.per.data.dir = 1
+	num.replica.fetchers = 1
+	offset.metadata.max.bytes = 4096
+	offsets.commit.required.acks = -1
+	offsets.commit.timeout.ms = 5000
+	offsets.load.buffer.size = 5242880
+	offsets.retention.check.interval.ms = 600000
+	offsets.retention.minutes = 1440
+	offsets.topic.compression.codec = 0
+	offsets.topic.num.partitions = 50
+	offsets.topic.replication.factor = 1
+	offsets.topic.segment.bytes = 104857600
+	port = 9092
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	producer.purgatory.purge.interval.requests = 1000
+	queued.max.requests = 500
+	quota.consumer.default = 9223372036854775807
+	quota.producer.default = 9223372036854775807
+	quota.window.num = 11
+	quota.window.size.seconds = 1
+	replica.fetch.backoff.ms = 1000
+	replica.fetch.max.bytes = 1048576
+	replica.fetch.min.bytes = 1
+	replica.fetch.response.max.bytes = 10485760
+	replica.fetch.wait.max.ms = 500
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	replica.lag.time.max.ms = 10000
+	replica.socket.receive.buffer.bytes = 65536
+	replica.socket.timeout.ms = 30000
+	replication.quota.window.num = 11
+	replication.quota.window.size.seconds = 1
+	request.timeout.ms = 30000
+	reserved.broker.max.id = 1000
+	sasl.enabled.mechanisms = [GSSAPI]
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	security.inter.broker.protocol = PLAINTEXT
+	socket.receive.buffer.bytes = 102400
+	socket.request.max.bytes = 104857600
+	socket.send.buffer.bytes = 102400
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.abort.timed.out.transaction.cleanup.interval.ms = 60000
+	transaction.max.timeout.ms = 900000
+	transaction.remove.expired.transaction.cleanup.interval.ms = 3600000
+	transaction.state.log.load.buffer.size = 5242880
+	transaction.state.log.min.isr = 1
+	transaction.state.log.num.partitions = 50
+	transaction.state.log.replication.factor = 1
+	transaction.state.log.segment.bytes = 104857600
+	transactional.id.expiration.ms = 604800000
+	unclean.leader.election.enable = false
+	zookeeper.connect = localhost:2181
+	zookeeper.connection.timeout.ms = 6000
+	zookeeper.session.timeout.ms = 6000
+	zookeeper.set.acl = false
+	zookeeper.sync.time.ms = 2000
+ (kafka.server.KafkaConfig)
+[2017-09-14 16:26:03,537] INFO starting (kafka.server.KafkaServer)
+[2017-09-14 16:26:03,541] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2017-09-14 16:26:03,550] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2017-09-14 16:26:03,555] INFO Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,555] INFO Client environment:host.name=gpatzlaff-mbp15-02.sv.splunk.com (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,555] INFO Client environment:java.version=1.8.0_111 (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,555] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,556] INFO Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,556] INFO Client environment:java.class.path=:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/aopalliance-repackaged-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/argparse4j-0.7.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/commons-lang3-3.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-api-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-file-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-json-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-runtime-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/connect-transforms-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/guava-20.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-api-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-locator-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/hk2-utils-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-annotations-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-core-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-databind-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-jaxrs-base-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-jaxrs-json-provider-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jackson-module-jaxb-annotations-2.8.5.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javassist-3.21.0-GA.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.annotation-api-1.2.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.inject-1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.inject-2.5.0-b05.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.servlet-api-3.1.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/javax.ws.rs-api-2.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-client-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-common-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-container-servlet-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-container-servlet-core-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-guava-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-media-jaxb-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jersey-server-2.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-continuation-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-http-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-io-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-security-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-server-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-servlet-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-servlets-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jetty-util-9.2.15.v20160210.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/jopt-simple-5.0.3.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-clients-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-log4j-appender-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-streams-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-streams-examples-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka-tools-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0-sources.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0-test-sources.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/kafka_2.11-0.11.0.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/log4j-1.2.17.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/lz4-1.3.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/maven-artifact-3.5.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/metrics-core-2.2.0.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/plexus-utils-3.0.24.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/reflections-0.9.11.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/rocksdbjni-5.0.1.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/scala-library-2.11.11.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/scala-parser-combinators_2.11-1.0.4.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/slf4j-api-1.7.25.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/slf4j-log4j12-1.7.25.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/snappy-java-1.1.2.6.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/validation-api-1.1.0.Final.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/zkclient-0.10.jar:/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0/bin/../libs/zookeeper-3.4.10.jar (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,556] INFO Client environment:java.library.path=/Users/gpatzlaff/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:. (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,556] INFO Client environment:java.io.tmpdir=/var/folders/gz/9ky3yzkd18qbh45mc8_k7hdw0000gp/T/ (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,556] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,556] INFO Client environment:os.name=Mac OS X (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,556] INFO Client environment:os.arch=x86_64 (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,556] INFO Client environment:os.version=10.12.6 (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,557] INFO Client environment:user.name=gpatzlaff (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,557] INFO Client environment:user.home=/Users/gpatzlaff (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,557] INFO Client environment:user.dir=/Users/gpatzlaff/Code/kafka_2.11-0.11.0.0 (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,557] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@636be97c (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:03,569] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2017-09-14 16:26:03,570] INFO Opening socket connection to server localhost/0:0:0:0:0:0:0:1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2017-09-14 16:26:03,621] INFO Socket connection established to localhost/0:0:0:0:0:0:0:1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2017-09-14 16:26:03,651] INFO Session establishment complete on server localhost/0:0:0:0:0:0:0:1:2181, sessionid = 0x15e828aac6a0003, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2017-09-14 16:26:03,653] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2017-09-14 16:26:03,753] INFO Cluster ID = 8VFJ9cCTT0ChKCO3MV3t4g (kafka.server.KafkaServer)
+[2017-09-14 16:26:03,755] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2017-09-14 16:26:03,775] INFO [ThrottledRequestReaper-Fetch]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:03,775] INFO [ThrottledRequestReaper-Produce]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:03,776] INFO [ThrottledRequestReaper-Request]: Starting (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:03,806] INFO Loading logs. (kafka.log.LogManager)
+[2017-09-14 16:26:03,849] INFO Loading producer state from offset 0 for partition __consumer_offsets-0 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:03,857] INFO Completed load of log __consumer_offsets-0 with 1 log segments, log start offset 0 and log end offset 0 in 32 ms (kafka.log.Log)
+[2017-09-14 16:26:03,864] INFO Loading producer state from offset 0 for partition __consumer_offsets-1 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:03,864] INFO Completed load of log __consumer_offsets-1 with 1 log segments, log start offset 0 and log end offset 0 in 2 ms (kafka.log.Log)
+[2017-09-14 16:26:03,962] INFO Loading producer state from offset 0 for partition __consumer_offsets-10 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:03,963] INFO Completed load of log __consumer_offsets-10 with 1 log segments, log start offset 0 and log end offset 0 in 96 ms (kafka.log.Log)
+[2017-09-14 16:26:04,053] INFO Loading producer state from offset 0 for partition __consumer_offsets-11 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,053] INFO Completed load of log __consumer_offsets-11 with 1 log segments, log start offset 0 and log end offset 0 in 87 ms (kafka.log.Log)
+[2017-09-14 16:26:04,156] INFO Loading producer state from offset 0 for partition __consumer_offsets-12 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,156] INFO Completed load of log __consumer_offsets-12 with 1 log segments, log start offset 0 and log end offset 0 in 101 ms (kafka.log.Log)
+[2017-09-14 16:26:04,239] INFO Loading producer state from offset 0 for partition __consumer_offsets-13 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,240] INFO Completed load of log __consumer_offsets-13 with 1 log segments, log start offset 0 and log end offset 0 in 81 ms (kafka.log.Log)
+[2017-09-14 16:26:04,334] INFO Loading producer state from offset 0 for partition __consumer_offsets-14 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,335] INFO Completed load of log __consumer_offsets-14 with 1 log segments, log start offset 0 and log end offset 0 in 92 ms (kafka.log.Log)
+[2017-09-14 16:26:04,429] INFO Loading producer state from offset 0 for partition __consumer_offsets-15 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,430] INFO Completed load of log __consumer_offsets-15 with 1 log segments, log start offset 0 and log end offset 0 in 94 ms (kafka.log.Log)
+[2017-09-14 16:26:04,522] INFO Loading producer state from offset 0 for partition __consumer_offsets-16 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,523] INFO Completed load of log __consumer_offsets-16 with 1 log segments, log start offset 0 and log end offset 0 in 91 ms (kafka.log.Log)
+[2017-09-14 16:26:04,607] INFO Loading producer state from offset 0 for partition __consumer_offsets-17 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,608] INFO Completed load of log __consumer_offsets-17 with 1 log segments, log start offset 0 and log end offset 0 in 82 ms (kafka.log.Log)
+[2017-09-14 16:26:04,716] INFO Loading producer state from offset 0 for partition __consumer_offsets-18 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,717] INFO Completed load of log __consumer_offsets-18 with 1 log segments, log start offset 0 and log end offset 0 in 108 ms (kafka.log.Log)
+[2017-09-14 16:26:04,816] INFO Loading producer state from offset 0 for partition __consumer_offsets-19 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,816] INFO Completed load of log __consumer_offsets-19 with 1 log segments, log start offset 0 and log end offset 0 in 97 ms (kafka.log.Log)
+[2017-09-14 16:26:04,908] INFO Loading producer state from offset 0 for partition __consumer_offsets-2 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,909] INFO Completed load of log __consumer_offsets-2 with 1 log segments, log start offset 0 and log end offset 0 in 91 ms (kafka.log.Log)
+[2017-09-14 16:26:04,993] INFO Loading producer state from offset 0 for partition __consumer_offsets-20 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:04,994] INFO Completed load of log __consumer_offsets-20 with 1 log segments, log start offset 0 and log end offset 0 in 83 ms (kafka.log.Log)
+[2017-09-14 16:26:05,081] INFO Loading producer state from offset 0 for partition __consumer_offsets-21 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,081] INFO Completed load of log __consumer_offsets-21 with 1 log segments, log start offset 0 and log end offset 0 in 85 ms (kafka.log.Log)
+[2017-09-14 16:26:05,173] INFO Loading producer state from offset 0 for partition __consumer_offsets-22 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,174] INFO Completed load of log __consumer_offsets-22 with 1 log segments, log start offset 0 and log end offset 0 in 91 ms (kafka.log.Log)
+[2017-09-14 16:26:05,270] INFO Loading producer state from offset 0 for partition __consumer_offsets-23 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,270] INFO Completed load of log __consumer_offsets-23 with 1 log segments, log start offset 0 and log end offset 0 in 95 ms (kafka.log.Log)
+[2017-09-14 16:26:05,364] INFO Loading producer state from offset 0 for partition __consumer_offsets-24 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,364] INFO Completed load of log __consumer_offsets-24 with 1 log segments, log start offset 0 and log end offset 0 in 92 ms (kafka.log.Log)
+[2017-09-14 16:26:05,473] INFO Loading producer state from offset 0 for partition __consumer_offsets-25 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,473] INFO Completed load of log __consumer_offsets-25 with 1 log segments, log start offset 0 and log end offset 0 in 107 ms (kafka.log.Log)
+[2017-09-14 16:26:05,566] INFO Loading producer state from offset 0 for partition __consumer_offsets-26 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,566] INFO Completed load of log __consumer_offsets-26 with 1 log segments, log start offset 0 and log end offset 0 in 91 ms (kafka.log.Log)
+[2017-09-14 16:26:05,660] INFO Loading producer state from offset 0 for partition __consumer_offsets-27 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,660] INFO Completed load of log __consumer_offsets-27 with 1 log segments, log start offset 0 and log end offset 0 in 92 ms (kafka.log.Log)
+[2017-09-14 16:26:05,745] INFO Loading producer state from offset 0 for partition __consumer_offsets-28 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,746] INFO Completed load of log __consumer_offsets-28 with 1 log segments, log start offset 0 and log end offset 0 in 85 ms (kafka.log.Log)
+[2017-09-14 16:26:05,839] INFO Loading producer state from offset 0 for partition __consumer_offsets-29 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,839] INFO Completed load of log __consumer_offsets-29 with 1 log segments, log start offset 0 and log end offset 0 in 92 ms (kafka.log.Log)
+[2017-09-14 16:26:05,941] INFO Loading producer state from offset 0 for partition __consumer_offsets-3 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:05,942] INFO Completed load of log __consumer_offsets-3 with 1 log segments, log start offset 0 and log end offset 0 in 101 ms (kafka.log.Log)
+[2017-09-14 16:26:06,040] INFO Loading producer state from offset 0 for partition __consumer_offsets-30 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,041] INFO Completed load of log __consumer_offsets-30 with 1 log segments, log start offset 0 and log end offset 0 in 98 ms (kafka.log.Log)
+[2017-09-14 16:26:06,135] INFO Loading producer state from offset 0 for partition __consumer_offsets-31 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,136] INFO Completed load of log __consumer_offsets-31 with 1 log segments, log start offset 0 and log end offset 0 in 94 ms (kafka.log.Log)
+[2017-09-14 16:26:06,235] INFO Loading producer state from offset 0 for partition __consumer_offsets-32 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,236] INFO Completed load of log __consumer_offsets-32 with 1 log segments, log start offset 0 and log end offset 0 in 99 ms (kafka.log.Log)
+[2017-09-14 16:26:06,329] INFO Loading producer state from offset 0 for partition __consumer_offsets-33 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,330] INFO Completed load of log __consumer_offsets-33 with 1 log segments, log start offset 0 and log end offset 0 in 92 ms (kafka.log.Log)
+[2017-09-14 16:26:06,412] INFO Loading producer state from offset 0 for partition __consumer_offsets-34 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,413] INFO Completed load of log __consumer_offsets-34 with 1 log segments, log start offset 0 and log end offset 0 in 81 ms (kafka.log.Log)
+[2017-09-14 16:26:06,507] INFO Loading producer state from offset 0 for partition __consumer_offsets-35 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,507] INFO Completed load of log __consumer_offsets-35 with 1 log segments, log start offset 0 and log end offset 0 in 93 ms (kafka.log.Log)
+[2017-09-14 16:26:06,597] INFO Loading producer state from offset 0 for partition __consumer_offsets-36 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,598] INFO Completed load of log __consumer_offsets-36 with 1 log segments, log start offset 0 and log end offset 0 in 89 ms (kafka.log.Log)
+[2017-09-14 16:26:06,680] INFO Loading producer state from offset 0 for partition __consumer_offsets-37 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,681] INFO Completed load of log __consumer_offsets-37 with 1 log segments, log start offset 0 and log end offset 0 in 81 ms (kafka.log.Log)
+[2017-09-14 16:26:06,770] INFO Loading producer state from offset 0 for partition __consumer_offsets-38 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,771] INFO Completed load of log __consumer_offsets-38 with 1 log segments, log start offset 0 and log end offset 0 in 89 ms (kafka.log.Log)
+[2017-09-14 16:26:06,859] INFO Loading producer state from offset 0 for partition __consumer_offsets-39 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,859] INFO Completed load of log __consumer_offsets-39 with 1 log segments, log start offset 0 and log end offset 0 in 87 ms (kafka.log.Log)
+[2017-09-14 16:26:06,970] INFO Loading producer state from offset 0 for partition __consumer_offsets-4 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:06,970] INFO Completed load of log __consumer_offsets-4 with 1 log segments, log start offset 0 and log end offset 0 in 109 ms (kafka.log.Log)
+[2017-09-14 16:26:07,061] INFO Loading producer state from offset 3520 for partition __consumer_offsets-40 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,064] INFO Loading producer state from snapshot file 00000000000000003520.snapshot for partition __consumer_offsets-40 (kafka.log.ProducerStateManager)
+[2017-09-14 16:26:07,072] INFO Completed load of log __consumer_offsets-40 with 1 log segments, log start offset 0 and log end offset 3520 in 99 ms (kafka.log.Log)
+[2017-09-14 16:26:07,163] INFO Loading producer state from offset 0 for partition __consumer_offsets-41 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,163] INFO Completed load of log __consumer_offsets-41 with 1 log segments, log start offset 0 and log end offset 0 in 90 ms (kafka.log.Log)
+[2017-09-14 16:26:07,252] INFO Loading producer state from offset 0 for partition __consumer_offsets-42 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,252] INFO Completed load of log __consumer_offsets-42 with 1 log segments, log start offset 0 and log end offset 0 in 87 ms (kafka.log.Log)
+[2017-09-14 16:26:07,345] INFO Loading producer state from offset 0 for partition __consumer_offsets-43 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,346] INFO Completed load of log __consumer_offsets-43 with 1 log segments, log start offset 0 and log end offset 0 in 93 ms (kafka.log.Log)
+[2017-09-14 16:26:07,438] INFO Loading producer state from offset 0 for partition __consumer_offsets-44 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,439] INFO Completed load of log __consumer_offsets-44 with 1 log segments, log start offset 0 and log end offset 0 in 91 ms (kafka.log.Log)
+[2017-09-14 16:26:07,521] INFO Loading producer state from offset 0 for partition __consumer_offsets-45 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,521] INFO Completed load of log __consumer_offsets-45 with 1 log segments, log start offset 0 and log end offset 0 in 81 ms (kafka.log.Log)
+[2017-09-14 16:26:07,626] INFO Loading producer state from offset 0 for partition __consumer_offsets-46 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,627] INFO Completed load of log __consumer_offsets-46 with 1 log segments, log start offset 0 and log end offset 0 in 104 ms (kafka.log.Log)
+[2017-09-14 16:26:07,723] INFO Loading producer state from offset 0 for partition __consumer_offsets-47 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,723] INFO Completed load of log __consumer_offsets-47 with 1 log segments, log start offset 0 and log end offset 0 in 95 ms (kafka.log.Log)
+[2017-09-14 16:26:07,810] INFO Loading producer state from offset 0 for partition __consumer_offsets-48 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,811] INFO Completed load of log __consumer_offsets-48 with 1 log segments, log start offset 0 and log end offset 0 in 86 ms (kafka.log.Log)
+[2017-09-14 16:26:07,891] INFO Loading producer state from offset 0 for partition __consumer_offsets-49 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,891] INFO Completed load of log __consumer_offsets-49 with 1 log segments, log start offset 0 and log end offset 0 in 79 ms (kafka.log.Log)
+[2017-09-14 16:26:07,973] INFO Loading producer state from offset 0 for partition __consumer_offsets-5 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:07,974] INFO Completed load of log __consumer_offsets-5 with 1 log segments, log start offset 0 and log end offset 0 in 81 ms (kafka.log.Log)
+[2017-09-14 16:26:08,050] INFO Loading producer state from offset 0 for partition __consumer_offsets-6 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:08,051] INFO Completed load of log __consumer_offsets-6 with 1 log segments, log start offset 0 and log end offset 0 in 76 ms (kafka.log.Log)
+[2017-09-14 16:26:08,127] INFO Loading producer state from offset 0 for partition __consumer_offsets-7 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:08,128] INFO Completed load of log __consumer_offsets-7 with 1 log segments, log start offset 0 and log end offset 0 in 76 ms (kafka.log.Log)
+[2017-09-14 16:26:08,207] INFO Loading producer state from offset 0 for partition __consumer_offsets-8 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:08,208] INFO Completed load of log __consumer_offsets-8 with 1 log segments, log start offset 0 and log end offset 0 in 78 ms (kafka.log.Log)
+[2017-09-14 16:26:08,294] INFO Loading producer state from offset 0 for partition __consumer_offsets-9 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:08,295] INFO Completed load of log __consumer_offsets-9 with 1 log segments, log start offset 0 and log end offset 0 in 86 ms (kafka.log.Log)
+[2017-09-14 16:26:08,397] INFO Loading producer state from offset 2 for partition connect-test-0 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:08,398] INFO Loading producer state from snapshot file 00000000000000000002.snapshot for partition connect-test-0 (kafka.log.ProducerStateManager)
+[2017-09-14 16:26:08,398] INFO Completed load of log connect-test-0 with 1 log segments, log start offset 0 and log end offset 2 in 102 ms (kafka.log.Log)
+[2017-09-14 16:26:08,484] INFO Loading producer state from offset 3 for partition test-0 with message format version 2 (kafka.log.Log)
+[2017-09-14 16:26:08,485] INFO Loading producer state from snapshot file 00000000000000000003.snapshot for partition test-0 (kafka.log.ProducerStateManager)
+[2017-09-14 16:26:08,485] INFO Completed load of log test-0 with 1 log segments, log start offset 0 and log end offset 3 in 86 ms (kafka.log.Log)
+[2017-09-14 16:26:08,487] INFO Logs loading complete in 4681 ms. (kafka.log.LogManager)
+[2017-09-14 16:26:08,612] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2017-09-14 16:26:08,613] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2017-09-14 16:26:08,640] INFO Awaiting socket connections on 0.0.0.0:9092. (kafka.network.Acceptor)
+[2017-09-14 16:26:08,642] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2017-09-14 16:26:08,653] INFO [ExpirationReaper-0-Produce]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:08,653] INFO [ExpirationReaper-0-Fetch]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:08,654] INFO [ExpirationReaper-0-DeleteRecords]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:08,683] INFO [ExpirationReaper-0-topic]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:08,685] INFO [ExpirationReaper-0-Heartbeat]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:08,686] INFO [ExpirationReaper-0-Rebalance]: Starting (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:08,699] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.group.GroupCoordinator)
+[2017-09-14 16:26:08,700] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.group.GroupCoordinator)
+[2017-09-14 16:26:08,701] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 2 milliseconds. (kafka.coordinator.group.GroupMetadataManager)
+[2017-09-14 16:26:08,728] INFO [ProducerId Manager 0]: Acquired new producerId block (brokerId:0,blockStartProducerId:1000,blockEndProducerId:1999) by writing to Zk with path version 2 (kafka.coordinator.transaction.ProducerIdManager)
+[2017-09-14 16:26:08,742] INFO [Transaction Coordinator 0]: Starting up. (kafka.coordinator.transaction.TransactionCoordinator)
+[2017-09-14 16:26:08,752] INFO [Transaction Marker Channel Manager 0]: Starting (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2017-09-14 16:26:08,752] INFO [Transaction Coordinator 0]: Startup complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2017-09-14 16:26:08,767] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2017-09-14 16:26:08,799] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2017-09-14 16:26:08,837] INFO Result of znode creation is: NODEEXISTS (kafka.utils.ZKCheckedEphemeral)
+[2017-09-14 16:26:08,838] FATAL [Kafka Server 0], Fatal error during KafkaServer startup. Prepare to shutdown (kafka.server.KafkaServer)
+java.lang.RuntimeException: A broker is already registered on the path /brokers/ids/0. This probably indicates that you either have configured a brokerid that is already in use, or else you have shutdown this broker and restarted it faster than the zookeeper timeout so it appears to be re-registering.
+	at kafka.utils.ZkUtils.registerBrokerInZk(ZkUtils.scala:417)
+	at kafka.utils.ZkUtils.registerBrokerInZk(ZkUtils.scala:403)
+	at kafka.server.KafkaHealthcheck.register(KafkaHealthcheck.scala:70)
+	at kafka.server.KafkaHealthcheck.startup(KafkaHealthcheck.scala:50)
+	at kafka.server.KafkaServer.startup(KafkaServer.scala:280)
+	at kafka.server.KafkaServerStartable.startup(KafkaServerStartable.scala:38)
+	at kafka.Kafka$.main(Kafka.scala:65)
+	at kafka.Kafka.main(Kafka.scala)
+[2017-09-14 16:26:08,840] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2017-09-14 16:26:08,842] INFO [Socket Server on Broker 0], Shutting down (kafka.network.SocketServer)
+[2017-09-14 16:26:08,851] INFO [Socket Server on Broker 0], Shutdown completed (kafka.network.SocketServer)
+[2017-09-14 16:26:08,852] INFO [Kafka Request Handler on Broker 0], shutting down (kafka.server.KafkaRequestHandlerPool)
+[2017-09-14 16:26:08,878] INFO [Kafka Request Handler on Broker 0], shut down completely (kafka.server.KafkaRequestHandlerPool)
+[2017-09-14 16:26:08,879] INFO [ThrottledRequestReaper-Fetch]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:09,798] INFO [ThrottledRequestReaper-Fetch]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:09,798] INFO [ThrottledRequestReaper-Fetch]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:09,798] INFO [ThrottledRequestReaper-Produce]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:10,800] INFO [ThrottledRequestReaper-Produce]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:10,800] INFO [ThrottledRequestReaper-Produce]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:10,801] INFO [ThrottledRequestReaper-Request]: Shutting down (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:11,804] INFO [ThrottledRequestReaper-Request]: Stopped (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:11,804] INFO [ThrottledRequestReaper-Request]: Shutdown completed (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2017-09-14 16:26:11,805] INFO [KafkaApi-0] Shutdown complete. (kafka.server.KafkaApis)
+[2017-09-14 16:26:11,806] INFO [ExpirationReaper-0-topic]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:11,926] INFO [ExpirationReaper-0-topic]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:11,926] INFO [ExpirationReaper-0-topic]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:11,928] INFO [Transaction Coordinator 0]: Shutting down. (kafka.coordinator.transaction.TransactionCoordinator)
+[2017-09-14 16:26:11,929] INFO [ProducerId Manager 0]: Shutdown complete: last producerId assigned 1000 (kafka.coordinator.transaction.ProducerIdManager)
+[2017-09-14 16:26:11,929] INFO [Transaction State Manager 0]: Shutdown complete (kafka.coordinator.transaction.TransactionStateManager)
+[2017-09-14 16:26:11,929] INFO [Transaction Marker Channel Manager 0]: Shutting down (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2017-09-14 16:26:11,929] INFO [Transaction Marker Channel Manager 0]: Stopped (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2017-09-14 16:26:11,929] INFO [Transaction Marker Channel Manager 0]: Shutdown completed (kafka.coordinator.transaction.TransactionMarkerChannelManager)
+[2017-09-14 16:26:11,930] INFO [Transaction Coordinator 0]: Shutdown complete. (kafka.coordinator.transaction.TransactionCoordinator)
+[2017-09-14 16:26:11,930] INFO [GroupCoordinator 0]: Shutting down. (kafka.coordinator.group.GroupCoordinator)
+[2017-09-14 16:26:11,930] INFO [ExpirationReaper-0-Heartbeat]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,127] INFO [ExpirationReaper-0-Heartbeat]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,127] INFO [ExpirationReaper-0-Heartbeat]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,128] INFO [ExpirationReaper-0-Rebalance]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,332] INFO [ExpirationReaper-0-Rebalance]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,332] INFO [ExpirationReaper-0-Rebalance]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,333] INFO [GroupCoordinator 0]: Shutdown complete. (kafka.coordinator.group.GroupCoordinator)
+[2017-09-14 16:26:12,333] INFO [Replica Manager on Broker 0]: Shutting down (kafka.server.ReplicaManager)
+[2017-09-14 16:26:12,333] INFO [ReplicaFetcherManager on broker 0] shutting down (kafka.server.ReplicaFetcherManager)
+[2017-09-14 16:26:12,334] INFO [ReplicaFetcherManager on broker 0] shutdown completed (kafka.server.ReplicaFetcherManager)
+[2017-09-14 16:26:12,334] INFO [ExpirationReaper-0-Fetch]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,507] INFO [ExpirationReaper-0-Fetch]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,507] INFO [ExpirationReaper-0-Fetch]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,508] INFO [ExpirationReaper-0-Produce]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,711] INFO [ExpirationReaper-0-Produce]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,711] INFO [ExpirationReaper-0-Produce]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,711] INFO [ExpirationReaper-0-DeleteRecords]: Shutting down (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,915] INFO [ExpirationReaper-0-DeleteRecords]: Stopped (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,915] INFO [ExpirationReaper-0-DeleteRecords]: Shutdown completed (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2017-09-14 16:26:12,918] INFO [Replica Manager on Broker 0]: Shut down completely (kafka.server.ReplicaManager)
+[2017-09-14 16:26:12,918] INFO Shutting down. (kafka.log.LogManager)
+[2017-09-14 16:26:12,967] INFO Shutdown complete. (kafka.log.LogManager)
+[2017-09-14 16:26:12,975] INFO Terminate ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2017-09-14 16:26:13,022] INFO Session: 0x15e828aac6a0003 closed (org.apache.zookeeper.ZooKeeper)
+[2017-09-14 16:26:13,024] INFO EventThread shut down for session: 0x15e828aac6a0003 (org.apache.zookeeper.ClientCnxn)
+[2017-09-14 16:26:13,026] INFO [Kafka Server 0], shut down completed (kafka.server.KafkaServer)
+[2017-09-14 16:26:13,026] FATAL Exiting Kafka. (kafka.server.KafkaServerStartable)
+[2017-09-14 16:26:13,027] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
